@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script tutorial</title>
+</head>
+<body>
+    <h1>Welcome to my javascript tutorial</h1>     
+    <button id="click" onclick="clicked()"> 
+        Click me
+    </button>
+    <script>
+        // console.log("hello world")
+        // alert("me")
+        // // document.write("this is document write")
+        // console.warn("this is is warning")
+        // console.error("this is error")
+        // <!-- javascript variables  -->
+        var number1=34
+        var number2=56
+        console.log(number1+number2)
+        // data types in javascript
+
+    var str1="this is a string"
+    var str2="this is also string"
+
+    // objects
+    var marks={
+        ravi:34,
+        subham:45
+    }
+    console.log(str1)
+    console.log(number2)
+    console.log(marks)
+    //booleans
+    var a =true
+    var b =false
+     console.log(a,b)
+    var arr=[1,2,3,4,5,"string"]
+    console.log(arr)
+
+    //airthmatic operators
+
+    var a=34
+    var b=69
+    console.log("the value of a+b is",a+b)
+    console.log("the value of a-b is",a-b)
+    console.log("the value of a*b is",a*b)
+
+    // assignement operators
+    var c=b
+    c+=2         // c=c+2
+    console.log(c)
+    
+    // comparison operators
+    var x=34
+    var y=56
+    console.log(x==y)
+
+
+    // logical operators
+    console.log(true && true)
+    console.log(true && false)
+    console.log(true || false)
+    console.log(true || false)
+
+
+
+    // functions
+    function avg(a,b){
+        return (a*b)/2
+    }
+    c1=avg(2,5)
+    c2=avg(4,6)
+    console.log(c1,c2)
+
+
+    // conditional operators
+    var age=34
+    if(age>8){
+        console.log("you are not a kid")
+    }
+    else{
+        console.log("you are a kid")
+    }
+
+
+    // loops
+
+    // for loops
+    var arr=[1,2,3,4,5,6,7]
+    console.log(arr)
+    for(var i=0;i<arr.length;i++){
+        console.log(arr[i])
+    }
+    // constant function
+    // const ac=0   // can't changed
+    // ac=ac+1
+
+    // while loops
+    let j=0
+    while(j<arr.length){
+        console.log(arr[j])
+        j++
+
+    }
+
+    var arr=[1,2,3,4,5,6,7]
+    for(var i=0;i<arr.length;i++){
+        if(i==2){
+            // break
+            continue      // 3 can't printed
+        }
+        console.log(arr[i])
+    }
+    let myArr=["fan","camera",34,null,true]
+    console.log(myArr.length)
+    myArr.pop()
+    myArr.push("harry")
+    myArr.shift()
+    myArr.unshift()
+
+    // string methods in javascript
+    let myLovelyString="harry is a good boy"
+    console.log(myLovelyString.length)
+    console.log(myLovelyString.indexOf("good"))
+    console.log(myLovelyString.slice(0,3))
+    d=myLovelyString.replace("harry","larry")
+    console.log(d,myLovelyString)
+
+    // Dates 
+    myDate=new Date()
+    console.log(myDate)
+    console.log(myDate.getTime())
+    console.log(myDate.getFullYear())
+    console.log(myDate.getDay())
+
+    // DOM manipulation
+    // document object model
+    let elem=document.getElementById('click')
+    console.log(elem)
+    // let elemClass=ducument.getElementByClassName("container")
+    // console.log(elemClass)
+    console.log(elem.innerHTML)
+    console.log(elem.innerText)
+
+    tn=document.getElementsByTagName('button')
+    console.log(tn)
+    
+    // Events in JavaScript
+    function clicked(){
+        console.log("button waas clicked")
+    }
+    function clicked(){
+        console.log("button clicked")
+    }
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+   </script>
+
+ 
+
+ 
+
+
+
+</body>
+</html>
